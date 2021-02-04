@@ -22,8 +22,9 @@ public class IndexController {
 
 	@Value("${saml.discovery.url:/saml/sp/discovery}")
 	private String samlDiscoveryUrl;
-
-	@Value("${saml.discovery.entity-id:https://sts.windows.net/c5ca272d-4a1f-4a91-bc8d-0612fc364138/}")
+//https://sts.windows.net/2cba1354-f501-42c4-911c-0980e8d322b9/
+	//@Value("${saml.discovery.entity-id:https://sts.windows.net/c5ca272d-4a1f-4a91-bc8d-0612fc364138/}")
+	@Value("${saml.discovery.entity-id:https://sts.windows.net/2cba1354-f501-42c4-911c-0980e8d322b9/}")
 	private String samlDiscoveryEntityId;
 
 	@Autowired

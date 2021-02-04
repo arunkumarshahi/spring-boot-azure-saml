@@ -1,7 +1,7 @@
 security:
   require-ssl:true
 server:
-    port: 8443
+    port: 9443
     ssl:
       enabled: true
       key-alias: spring
@@ -22,8 +22,8 @@ spring:
         read-timeout: 10000
         connect-timeout: 5000
       service-provider:
-        entity-id: dummybot-saml
-        alias: dummybot-saml
+        entity-id: arun-spring-saml
+        alias: arun-spring-saml
         sign-metadata: false
         sign-requests: false
         want-assertions-signed: true
@@ -39,7 +39,7 @@ spring:
 
         providers:
           - alias: enter-into-dummybot-saml
-            metadata: https://login.microsoftonline.com/c5ca272d-4a1f-4a91-bc8d-0612fc364138/federationmetadata/2007-06/federationmetadata.xml?appid=5ef66785-5ea5-4737-8b28-db3c8d20d9ec
+            metadata: https://login.microsoftonline.com/2cba1354-f501-42c4-911c-0980e8d322b9/federationmetadata/2007-06/federationmetadata.xml?appid=bd687118-c0ae-4da0-93a2-e24a864f1563
             skip-ssl-validation: true
             link-text: enter-into-dummybot-saml
             authentication-request-binding: urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST
